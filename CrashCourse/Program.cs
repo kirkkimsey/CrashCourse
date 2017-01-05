@@ -10,19 +10,32 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            int number = 2;
-            Double number1 = 3.4;
-            Char letter = 'a';
-            String message = "Hello World";
-            bool decision = true;
-            Console.WriteLine("Number: " + number);
-            Console.WriteLine("Number1: " + number1);
-            Console.WriteLine("Letter: " + letter);
-            Console.WriteLine("Message: " + message);
-            Console.WriteLine("Decision: " + decision);
+       
+
+            //Give Instruction
+            Console.WriteLine("Pick a number 1-3.");
             Console.Read();
 
+            //Declare winning number
+            int winningNumber = 2;
+
+            //Accept string from user
+            int answer;
+            string data = Console.ReadLine();
+
+            //Convert string to int
+            int.TryParse(data, out answer);
+
+            //Compare user input with declared value
+            if (answer == winningNumber)
+            {
+                Console.WriteLine("You Win.");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you are wrong.");
+            }
+            }
         }
     }
-}
+
