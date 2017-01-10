@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,53 +11,43 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-            //Give Instruction
-            Console.WriteLine("Pick a number (1-5)");
-            //Declare winning numbers
-            const int winningNumber1 = 3;
-            const int winningNumber2 = 5;
-            //collect user date
-            string userData = Console.ReadLine();
-            int userNumber;
-            int.TryParse(userData, out userNumber);
-            //do they match?
-            switch (userNumber) {
-                case winningNumber1:
-                Console.WriteLine("You win!");
-                    break;
-                case winningNumber2:
-                   Console.WriteLine("you kind of win");
-                    break;
-                default:
-                    Console.WriteLine("You Lose");
-                    break;
+            //bool playGame = true;
+            //do
+            //{
+
+            //}
+            //while (playGame);
+
+            //int lives = 5;
+            //for (int i = 0; i < lives; i++)
+            //{
+
+            //}
+
+            //string[] stuff = new string[5];
+
+            ArrayList stuff = new ArrayList();
+            stuff.Add("cat");
+            stuff.Add("dog");
+            stuff.Add("squirrel");
+
+            List<string> stuff2 = new List<string>();
+            stuff2.Add("cat");
+            stuff2.Add("dog");
+            stuff2.Add("squirrel");
+            //stuff2.RemoveAt(1);
+            //stuff2.RemoveAt(stuff2.IndexOf("squirrel"));
+            var index = stuff2.IndexOf("cat");
+            if (index > 0)
+            {
+                stuff2.RemoveAt(index);
+            }
+
+            foreach (var animal in stuff2)
+            {
+                Console.WriteLine(animal);
             }
             Console.Read();
-
-            ////Give Instruction
-            //Console.WriteLine("Pick a number 1-3.");
-
-
-            ////Declare winning number
-            //int winningNumber = 2;
-
-            ////Accept string from user
-            //string data = Console.ReadLine();
-
-            ////Convert string to int
-            //int answer;
-            //int.TryParse(data, out answer);
-
-            ////Compare user input with declared value
-            //if (answer == winningNumber)
-            //{
-            //    Console.WriteLine("You Win.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Sorry, you are wrong.");
-            //}
-            //Console.Read();
         }
     }
     }
