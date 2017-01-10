@@ -14,16 +14,16 @@ namespace CrashCourse
 
             //Give Instruction
             Console.WriteLine("Pick a number 1-3.");
-            Console.Read();
+         
 
             //Declare winning number
             int winningNumber = 2;
 
             //Accept string from user
-            int answer;
             string data = Console.ReadLine();
 
             //Convert string to int
+            int answer;
             int.TryParse(data, out answer);
 
             //Compare user input with declared value
@@ -35,6 +35,7 @@ namespace CrashCourse
             {
                 Console.WriteLine("Sorry, you are wrong.");
             }
+            Console.Read();
             }
         }
     }
