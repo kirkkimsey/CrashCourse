@@ -11,22 +11,24 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-            string name = "Kirk";
-            string greeting = Greeting(name);
-            Console.WriteLine(greeting);
-            DoStuff("Kirk");
-            Console.WriteLine(name);
+            //Car car1 = new Car("Red");
+            //string description = car1.Describe();
+            //Console.WriteLine(description);
+            //string action = car1.Drive();
+            //Console.WriteLine(action);
+
+            List<Car> cars = new List<Car>();
+            cars.Add(new Car("Red"));
+            cars.Add(new Car("Green"));
+            cars.Add(new Car("Blue"));
+            cars.Add(new Car("Black"));
+            cars.Add(new Car("White"));
+
+            foreach (Car car in cars) {
+                string description = car.Describe();
+                Console.WriteLine(description);
+            }
             Console.Read();
-        }
-        public static void DoStuff() {
-            Console.WriteLine("Hello from DoStuff()");
-        }
-        public static void DoStuff(string name) {
-            Console.WriteLine("Hello, " + name);
-        }
-        public static string Greeting(string name) {
-            name = "Eduardo";
-            return "Hello, " + name;
         }
     }
     }
