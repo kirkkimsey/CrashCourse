@@ -11,30 +11,22 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-    
-            for (int i = 0; i <= 100; i++)
-            {
-                bool fizz = i % 3 == 0;
-                bool buzz = i % 5 == 0;
-
-                if (fizz && buzz)
-                {
-                    Console.WriteLine("Fizz Buzz");
-                }
-                else if (fizz)
-                {
-                    Console.WriteLine("fizz");
-                }
-                else if (buzz)
-                {
-                    Console.WriteLine("buzz");
-                }
-                else 
-                        {
-                    Console.WriteLine(i);
-                }  
-            }
+            string name = "Kirk";
+            string greeting = Greeting(name);
+            Console.WriteLine(greeting);
+            DoStuff("Kirk");
+            Console.WriteLine(name);
             Console.Read();
+        }
+        public static void DoStuff() {
+            Console.WriteLine("Hello from DoStuff()");
+        }
+        public static void DoStuff(string name) {
+            Console.WriteLine("Hello, " + name);
+        }
+        public static string Greeting(string name) {
+            name = "Eduardo";
+            return "Hello, " + name;
         }
     }
     }
