@@ -8,5 +8,28 @@ namespace CrashCourse
 {
     class Cat
     {
+        // Atribute / Properties
+        public string Breed { get; set; }
+        public double AvgWeight { get; set; }
+        public string Temperament { get; set; }
+
+        // Constructor
+        public Cat(string breed, double avgWeight, string temperament)
+        {
+            this.Breed = breed;
+            this.AvgWeight = avgWeight;
+            this.Temperament = temperament;
+        }
+
+        public string Describe()
+        {
+            return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
+        }
+
+        public string Mood()
+        {
+            return this.Breed + "'s have a " + this.Temperament + " mood.";
+        }
+
     }
 }
