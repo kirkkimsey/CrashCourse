@@ -11,27 +11,29 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-            var test = new Dog();
-            var noise = test.MakeNoise();
-            Console.WriteLine(noise);
-            var test2 = new Cat();
-            noise = test2.MakeNoise();
+            //var test = new Dog();
+            //var noise = test.MakeNoise();
+            //Console.WriteLine(noise);
+            //var test2 = new Cat();
+            //noise = test2.MakeNoise();
 
-            Console.WriteLine(noise);
+            //Console.WriteLine(noise);
+            //Console.Read();
+
+          
+
+
+            List<Animal> animal = new List<Animal>();
+            animal.Add(new Dog("Great Dane", 165.5, "Friendly"));
+            animal.Add(new Dog("Pitbull", 50, "Affectionate"));
+            animal.Add(new Dog("Bloodhound", 100, "Stubborn"));
+            animal.Add(new Dog("Dachshund", 25, "Clever"));
+            animal.Add(new Cat("Persian Cat", 10, "Gentle"));
+            animal.Add(new Cat("Maine Coon", 16, "Gentle"));
+            animal.Add(new Cat("Siamese Cat", 12, "Affectionate"));
+            animal.Add(new Cat("British Shorthair", 8, "Easy Going"));
+
             Console.Read();
-            
-            
-            //        List<Dog> dogs = new List<Dog>();
-            //        dogs.Add(new Dog("Great Dane", 165.5, "Friendly"));
-            //        dogs.Add(new Dog("Pitbull", 50, "Affectionate"));
-            //        dogs.Add(new Dog("Bloodhound", 100, "Stubborn"));
-            //        dogs.Add(new Dog("Dachshund", 25, "Clever"));
-
-            //        List<Cat> cats = new List<Cat>();
-            //        dogs.Add(new Dog("Persian Cat", 10, "Gentle"));
-            //        dogs.Add(new Dog("Maine Coon", 16, "Gentle"));
-            //        dogs.Add(new Dog("Siamese Cat", 12, "Affectionate"));
-            //        dogs.Add(new Dog("British Shorthair", 8, "Easy Going"));
 
             //        foreach (Dog dog in dogs) {
             //            string description = dog.Describe();
@@ -48,7 +50,7 @@ namespace CrashCourse
             //         }
 
             //        Console.Read();
-                }
+        }
             }
         }
 

@@ -8,6 +8,6 @@ namespace CrashCourse
 {
     public interface IMammal
     {
-        void HaveLiveBirth();
+        
     }
 }

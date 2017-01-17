@@ -16,25 +16,25 @@ namespace CrashCourse
     }
 
     //// Atribute / Properties
-    //public string Breed { get; set; }
-    //public double AvgWeight { get; set; }
-    //public string Temperament { get; set; }
+    public string Breed { get; set; }
+    public double AvgWeight { get; set; }
+    public string Temperament { get; set; }
 
-    //// Constructor
-    //public Cat(string breed, double avgWeight, string temperament)
-    //{
-    //    this.Breed = breed;
-    //    this.AvgWeight = avgWeight;
-    //    this.Temperament = temperament;
-    //}
+    // Constructor
+    public Cat(string breed, double avgWeight, string temperament)
+    {
+        this.Breed = breed;
+        this.AvgWeight = avgWeight;
+        this.Temperament = temperament;
+    }
 
-    //public string Describe()
-    //{
-    //    return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
-    //}
+    public string Describe()
+    {
+        return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
+    }
 
-    //public string Mood()
-    //{
-    //    return this.Breed + "'s have a " + this.Temperament + " mood.";
-    //}
+    public string Mood()
+    {
+        return this.Breed + "'s have a " + this.Temperament + " mood.";
+    }
 }
