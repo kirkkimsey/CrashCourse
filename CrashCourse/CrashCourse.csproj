@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Cat.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="IMammal.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
