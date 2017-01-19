@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CrashCourse
 {
-    public interface IMammal
+    public interface IAnimal
     {
-        
+        string makeNoise();
+
+        void walk();
     }
 }

@@ -11,30 +11,59 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
-            //var test = new Dog();
-            //var noise = test.MakeNoise();
-            //Console.WriteLine(noise);
-            //var test2 = new Cat();
-            //noise = test2.MakeNoise();
+            //Add Dog attributes
+            var Dog = new Dog();
+            Dog.Breed = "Great Dane";
+            Dog.AvgWeight = 165.5;
+            Dog.Temperament = "Friendly";
 
-            //Console.WriteLine(noise);
-            //Console.Read();
+            var dog1 = new Dog();
+            Dog.Breed = "Pitbull";
+            Dog.AvgWeight = 50;
+            Dog.Temperament = "Affectionate";
 
+            var dog2 = new Dog();
+            Dog.Breed = "Bloodhound";
+            Dog.AvgWeight = 100;
+            Dog.Temperament = "Stubborn";
 
+            var dog3 = new Dog();
+            Dog.Breed = "Dachsund";
+            Dog.AvgWeight = 25;
+            Dog.Temperament = "Clever";
+
+            //Add Cat Attributes
+            var cat = new Cat();
+            cat.Breed = "Persian Cat";
+            cat.AvgWeight = 10;
+            cat.Temperament = "Gentle";
+
+            var cat1 = new Cat();
+            cat.Breed = "Maine Coon";
+            cat.AvgWeight = 16;
+            cat.Temperament = "Gentle";
+
+            var cat2 = new Cat();
+            cat.Breed = "Siamese Cat";
+            cat.AvgWeight = 12;
+            cat.Temperament = "Affectionate";
+
+            var cat3 = new Cat();
+            cat.Breed = "British Shorthair";
+            cat.AvgWeight = 8;
+            cat.Temperament = "Easy Going";
+
+            Lazy<Dog> dog = new List<Dog>();
+            
 
             List<Animal> Animal = new List<Animal>();
-            Animal.Add(new Dog("Great Dane", 165.5, "Friendly"));
-            Animal.Add(new Dog("Pitbull", 50, "Affectionate"));
-            Animal.Add(new Dog("Bloodhound", 100, "Stubborn"));
-            Animal.Add(new Dog("Dachshund", 25, "Clever"));
-            Animal.Add(new Cat("Persian Cat", 10, "Gentle"));
-            Animal.Add(new Cat("Maine Coon", 16, "Gentle"));
-            Animal.Add(new Cat("Siamese Cat", 12, "Affectionate"));
-            Animal.Add(new Cat("British Shorthair", 8, "Easy Going"));
+            Animal.Add();
+           
 
 
 
-
+            Console.WriteLine(noise);
+            Console.Read();
 
             foreach (Animal animal in Animal)
             {

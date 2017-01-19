@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace CrashCourse
 {
-    public class Dog: Animal
+    public class Dog: Animal, IAnimal
 
     {
 
         // Constructor
-
-        public string Breed { get; set; }
-        public double AvgWeight { get; set; }
-        public string Temperament { get; set; }
-       
-
         public Dog(string breed, double avgWeight, string temperament)
         {
             this.Breed = breed;
             this.AvgWeight = avgWeight;
             this.Temperament = temperament;
         }
+
+        public Dog()
+        {
+        }
+
         public string Describe()
         {
             return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
@@ -31,6 +30,17 @@ namespace CrashCourse
         public string Mood()
         {
             return this.Breed + "'s have a " + this.Temperament + " mood.";
+        }
+
+        public string makeNoise()
+        {
+            return "Woof!";
+        }
+
+        public void walk()
+        {
+            //TODO: FixLater
+            throw new NotImplementedException();
         }
     }
 

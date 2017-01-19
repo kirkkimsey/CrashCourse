@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CrashCourse
 {
-    public interface Animal
+    public abstract class Animal
     {
-        
+        public string Breed { get; set; }
+        public double AvgWeight { get; set; }
+        public string Temperament { get; set; }
     }
 }
