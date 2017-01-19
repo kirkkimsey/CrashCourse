@@ -6,35 +6,33 @@ using System.Threading.Tasks;
 
 namespace CrashCourse
 {
-    public class Cat : Animal, IMammal
+    public class Cat : Animal
     {
-     
-        public void HaveLiveBirth()
+
+        //// Atribute / Properties
+
+
+        // Constructor
+        public string Breed { get; set; }
+        public double AvgWeight { get; set; }
+        public string Temperament { get; set; }
+ 
+       
+        public Cat(string breed, double avgWeight, string temperament)
         {
-            throw new NotImplementedException();
+            this.Breed = breed;
+            this.AvgWeight = avgWeight;
+            this.Temperament = temperament;
+        }
+          public string Describe()
+        {
+            return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
+        }
+
+        public string Mood()
+        {
+            return this.Breed + "'s have a " + this.Temperament + " mood.";
         }
     }
-
-    //// Atribute / Properties
-    public string Breed { get; set; }
-    public double AvgWeight { get; set; }
-    public string Temperament { get; set; }
-
-    // Constructor
-    public Cat(string breed, double avgWeight, string temperament)
-    {
-        this.Breed = breed;
-        this.AvgWeight = avgWeight;
-        this.Temperament = temperament;
-    }
-
-    public string Describe()
-    {
-        return "A " + this.Breed + "'s average wieght is " + this.AvgWeight + "lbs.";
-    }
-
-    public string Mood()
-    {
-        return this.Breed + "'s have a " + this.Temperament + " mood.";
-    }
 }
+    

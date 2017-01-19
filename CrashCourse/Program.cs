@@ -20,37 +20,34 @@ namespace CrashCourse
             //Console.WriteLine(noise);
             //Console.Read();
 
-          
 
 
-            List<Animal> animal = new List<Animal>();
-            animal.Add(new Dog("Great Dane", 165.5, "Friendly"));
-            animal.Add(new Dog("Pitbull", 50, "Affectionate"));
-            animal.Add(new Dog("Bloodhound", 100, "Stubborn"));
-            animal.Add(new Dog("Dachshund", 25, "Clever"));
-            animal.Add(new Cat("Persian Cat", 10, "Gentle"));
-            animal.Add(new Cat("Maine Coon", 16, "Gentle"));
-            animal.Add(new Cat("Siamese Cat", 12, "Affectionate"));
-            animal.Add(new Cat("British Shorthair", 8, "Easy Going"));
+            List<Animal> Animal = new List<Animal>();
+            Animal.Add(new Dog("Great Dane", 165.5, "Friendly"));
+            Animal.Add(new Dog("Pitbull", 50, "Affectionate"));
+            Animal.Add(new Dog("Bloodhound", 100, "Stubborn"));
+            Animal.Add(new Dog("Dachshund", 25, "Clever"));
+            Animal.Add(new Cat("Persian Cat", 10, "Gentle"));
+            Animal.Add(new Cat("Maine Coon", 16, "Gentle"));
+            Animal.Add(new Cat("Siamese Cat", 12, "Affectionate"));
+            Animal.Add(new Cat("British Shorthair", 8, "Easy Going"));
+
+
+
+
+
+            foreach (Animal animal in Animal)
+            {
+                string description = animal.Describe();
+                string mood = animal.Mood();
+                Console.WriteLine(description);
+                Console.WriteLine(mood);
+            }
 
             Console.Read();
-
-            //        foreach (Dog dog in dogs) {
-            //            string description = dog.Describe();
-            //            string mood = dog.Mood();
-            //            Console.WriteLine(description);
-            //            Console.WriteLine(mood);
-            //        }
-
-            //        foreach (Cat cat in cats) { 
-            //            string description = cat.Describe();
-            //            string mood = cat.Mood();
-            //            Console.WriteLine(description);
-            //            Console.WriteLine(mood);
-            //         }
-
-            //        Console.Read();
         }
-            }
+
+        
+    }
         }
 
